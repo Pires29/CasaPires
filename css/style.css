@@ -1,0 +1,1884 @@
+body{
+    font-family: 'Noto Serif JP', serif;
+    width: 100%;
+
+}
+
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+p{
+    font-size: 1.5rem;
+
+}
+
+.margin-quemsomos{
+    margin-top: 5rem;
+}
+
+.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#header{
+    margin-bottom: 4%;
+}
+
+#footer{
+    margin-top: 4%;
+}
+.py-6{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.px-6{
+    padding-left: 30rem;
+    padding-right: 30rem;
+}
+
+.pb-6{
+    padding-bottom: 6rem;
+}
+
+.mt-6{
+    margin-top: 6rem;
+}
+
+
+.padding-footer{
+    padding: 2.5% 15%;
+}
+
+.padding-quem-somos{
+    padding: 0 3rem;
+}
+
+.padding-quem-somos-img{
+    padding-right: 3rem;
+}
+
+@media all and (min-width: 1900px){
+    .nav-link{
+        font-size: 1.2rem;
+    }
+
+    .position-center-quem{
+        padding-right: 4rem;
+    }
+}
+
+@media all and (min-width: 1000px){
+    .position-center-quem{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-top: 2rem;
+    }
+
+    .position-center-contactos{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    #contactos p, #contactos a {
+        font-size: 1.3rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    .margin-butoes{
+        margin-right: 2rem;
+    }
+}
+
+
+
+h3{
+    color: #2876C8;
+    font-size: 2rem;
+}
+
+h4{
+    color: #2876C8;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.margin-left{
+    margin-right: 1rem;
+}
+
+.bg-footer{
+    background-color: #2876C8;
+}
+
+
+.align-text-icons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#main hr, #produtos hr{
+    width: 12%;
+    border: solid dimgrey;
+    border-radius: 1px;
+}
+
+#produtos hr{
+    height: 1px;
+    border-radius: 100px;
+}
+
+footer a{
+    text-decoration: none;
+}
+footer a {
+    font-weight: 100;
+    color: white;
+    font-size: 1rem;
+}
+
+footer a:hover{
+    color: white;
+}
+
+.footer-link{
+    font-weight: 100;
+    color: white;
+    font-size: 1rem;
+}
+.footer-link:hover{
+    color: darkgrey;!important;
+}
+
+
+/*---- Navbar ----*/
+
+.nav-link{
+    color: white;
+}
+
+.navbar{
+    transition: background-color 500ms ease-out;
+}
+
+.navbar-brand{
+    color: white!important;
+}
+
+.fancy-link{
+    position: relative;
+    color: white!important;
+}
+
+
+.fancy-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    height: 0.2rem;
+    border-radius: 1rem;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+
+
+.fancy-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navbar-nav .nav-link{
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+.fundo-nav{
+    color: white;!important;
+    background-color: #2876C8;
+}
+
+.fundo-nav .nav-link, .fundo-nav .navbar-brand{
+    color: white!important;
+}
+
+.fundo-nav .fancy-link{
+    position: relative;
+    color: white!important;
+}
+
+.fundo-nav .fancy-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    height: 0.2rem;
+    border-radius: 1rem;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.fundo-nav .fancy-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.carousel-caption-me{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    transform: translateY(-50%);
+}
+
+.landing-button-main{
+    width: fit-content;
+    padding: 1.2rem 3rem;
+    background-color: #2876C8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.landing-button-main:hover{
+    background-color: #0c63e4;
+    color: white;
+}
+
+.secondary-landing-button{
+    width: fit-content;
+    padding: 1.2rem 3rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.secondary-landing-button:hover{
+    color: darkgrey;
+    border: 1px solid darkgrey;
+}
+
+.titulo-landing{
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.paragrafo-landing{
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+
+.padding-landing{
+    padding: 4% 10%;
+}
+
+.padding-landing-footer{
+    padding: 0 15%;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    position: relative;
+    display: block;
+    padding: 0;
+    align-items: end!important;
+    opacity: 1;
+}
+
+.carousel-control-prev{
+    padding-right: 1rem;
+}
+
+.padding-landing-controllers{
+    position: absolute;
+    padding: 5% 10%;
+    bottom: 0;
+}
+
+img{
+    object-fit: cover;
+}
+
+
+.img-somos{
+    width: 100%;
+}
+
+/*----- Form ------*/
+
+
+#contactos img{
+    width: 115px;
+    height: 115px;
+}
+
+
+.login-box {
+    width: 100%;
+
+    padding: 75px 100px;
+    background: #2876C8;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 25px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+textarea{
+    height: 200px;
+}
+
+textarea::selection,input::selection{
+    color: black;
+    background: white;
+}
+
+.login-box .user-box input, .login-box .user-box textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box input:-webkit-autofill , .login-box .user-box textarea:-webkit-autofill{
+    background-color: black;
+}
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label,
+.login-box .user-box textarea:focus ~ label,
+.login-box .user-box textarea:focus ~ label
+{
+    top: -32px;
+    left: 0;
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+/* CSS */
+.button-56 {
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    width: 20%;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-56:active {
+    background-color: white;
+    color: black;
+    outline: 0;
+}
+
+.button-56:hover {
+    outline: 0;
+    background-color: white;
+    color: black;
+
+}
+
+@media (min-width: 768px) {
+    .button-56 {
+        padding: 0 40px;
+    }
+}
+
+/*---- Produtos -----*/
+
+.background-image-cards{
+    background-image: url("../imagens/Marcas/sanindusa.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#footer ul {
+    padding-top: 1rem;
+}
+
+#header_produtos h2{
+    color: white;
+    font-size: 3rem;
+}
+
+.position-center-produtos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .bg-categories{
+        background-color: #2876C8;
+    }
+
+    #contentor-todos{
+    display: none;
+    }
+
+    .padding-produtos{
+        padding: 1% 10% 4% 10%;
+    }
+    #produtos .padding-landing{
+        padding: 1% 15%;
+    }
+    #header_produtos{
+        background-image: url("../imagens/produtos-image-no-text.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+
+    .list-produtos{
+        text-align: center;
+    }
+
+    #produtos li{
+        font-size: 1.5rem;
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0 1rem;
+        overflow: hidden;
+    }
+
+    #produtos li a:hover{
+        color: white;
+    }
+
+    #produtos li a{
+        color: white;
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    .list-element-active{
+        position: relative;
+        margin: 0.5rem 0;
+        color: white!important;
+    }
+
+    .list-element-active::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: white;
+        width: 100%;
+        height: 0.2rem;
+        border-radius: 1rem;
+
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in;
+    }
+
+
+
+    .list-element-active::after{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+.text-center-cards{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.todos-contentor {
+    display: grid;
+    /* Display as a Grid */
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,21rem);
+    /* repeat = as many times as you can fit */
+    /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+    /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+    grid-gap: 10px;
+}
+
+.ceramicas-contentor {
+    display: none;
+    /* Display as a Grid */
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,21rem);
+    /* repeat = as many times as you can fit */
+    /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+    /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+    grid-gap: 10px;
+}
+
+.revestimentos-contentor{
+    display: none;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,21rem);
+    grid-gap: 10px;
+}
+
+.sanitarios-contentor{
+    display: none;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,21rem);
+    grid-gap: 10px;
+}
+
+.azulejos-contentor{
+    display: none;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,21rem);
+    grid-gap: 10px;
+}
+
+
+.acessorios-contentor{
+    display: none;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,21rem);
+    grid-gap: 10px;
+}
+
+.misturadoras-contentor{
+    display: none;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,21rem);
+    grid-gap: 10px;
+}
+
+.item {
+    border: 1px solid darkgrey;
+
+
+}
+
+    #produtos img{
+        width: 60%;
+        height: 50%;
+    }
+
+    #footer img{
+        width: 300px;
+        height: auto;
+    }
+
+/*----- Media Queries -----*/
+
+@media all and (max-width: 2200px){
+    .titulo-landing{
+        font-size: 4.3rem;
+        font-weight: 300;
+    }
+}
+@media all and (max-width: 1900px){
+    /*---- Landing Page -----*/
+
+    .padding-landing{
+        padding: 4% 10%;
+    }
+
+
+
+    #produtos .padding-landing{
+        padding: 1% 10%;
+    }
+
+    .titulo-landing{
+        font-size: 4rem;
+    }
+
+    .paragrafo-landing{
+        font-size: 1.25rem;
+    }
+
+    .landing-button-main{
+        width: fit-content;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .secondary-landing-button{
+        width: fit-content;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .carousel-control-next-icon{
+        width: 4rem!important;
+        height: 4rem!important;
+    }
+
+    /*----- Quem Somos -----*/
+
+    h3{
+        font-size: 1.7rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .margin-quemsomos{
+        margin-top: 4rem;
+    }
+
+    #quemsomos p{
+        line-height: 3rem;
+        font-size: 1.4rem;
+    }
+
+    #contactos img{
+        width: 100px;
+        height: 100px;
+    }
+
+    /*----- Form -----*/
+    .login-box{
+        padding: 75px 75px;
+    }
+
+    #form h2{
+        font-size: 1.7rem;
+    }
+
+    #contactos h4{
+        font-size: 1.5rem;
+    }
+
+    #contactos p, #contactos a{
+        font-size: 1.3rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    /*---- Produtos ----*/
+
+    #footer img{
+        width: 250px;
+        height: auto;
+    }
+
+    .padding-produtos{
+        padding: 1% 10% 4% 10%;
+    }
+
+    .padding-footer{
+        padding: 4% 10%;
+    }
+
+    .todos-contentor{
+        display: grid;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6,20rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .ceramicas-contentor, .revestimentos-contentor,.sanitarios-contentor, .acessorios-contentor, .misturadoras-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,20rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+    .azulejos-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,20rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    #produtos p{
+        font-size: 1.4rem;
+    }
+}
+
+@media all and (max-width: 1600px){
+    /*---- Landing Page -----*/
+    .titulo-landing{
+        font-size: 3.5rem;
+    }
+
+    .paragrafo-landing{
+        font-size: 1.25rem;
+    }
+
+    .landing-button-main{
+        width: fit-content;
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .secondary-landing-button{
+        width: fit-content;
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .carousel-control-next-icon{
+        width: 3rem!important;
+        height: 3rem!important;
+    }
+
+    /*----- Quem Somos -----*/
+
+    .margin-quemsomos{
+        margin-top: 3rem;
+    }
+
+    #quemsomos h1, #contactos h1{
+        font-size: 2.2rem;
+    }
+
+    h3{
+        font-size: 1.6rem;
+    }
+
+    #contactos p,#quemsomos p, #contactos a{
+        line-height: 2.5rem;
+        font-size: 1.3rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    /*---- Form ---- */
+
+
+    #form h2{
+        font-size: 1.6rem;
+    }
+    #contactos img{
+        width: 85px;
+        height: 85px;
+    }
+
+
+    .login-box{
+        padding: 50px 60px;
+    }
+
+    .login-box .user-box input{
+        margin-bottom: 30px;
+    }
+
+    #contactos h4{
+        font-size: 1.4rem;
+    }
+
+    #contactos p, #contactos a{
+        font-size: 1.2rem;
+        color: black;
+        text-decoration: none;
+    }
+
+
+    .mt-5{
+        margin-top: 1rem!important;
+    }
+
+    /*---- Produtos ----*/
+
+    #footer h5{
+        font-size: 1.1rem;
+    }
+
+    .footer-link{
+        font-size: 0.9rem;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
+
+    #footer img{
+        width: 250px;
+        height: auto;
+    }
+
+    .todos-contentor{
+        display: grid;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6,17rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .ceramicas-contentor, .revestimentos-contentor,.sanitarios-contentor, .acessorios-contentor, .misturadoras-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,17rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+    .azulejos-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,17rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    #produtos p{
+        font-size: 1.3rem;
+    }
+
+    #produtos li{
+        font-size: 1.3rem;
+    }
+}
+
+@media all and (max-width: 1400px){
+    /*---- Landing Page -----*/
+    .titulo-landing{
+        font-size: 3rem;
+    }
+
+    .paragrafo-landing{
+        font-size: 1.15rem;
+    }
+
+    .landing-button-main{
+        width: fit-content;
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .secondary-landing-button{
+        width: fit-content;
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .carousel-control-next-icon{
+        width: 3rem!important;
+        height: 3rem!important;
+    }
+
+    /*----- Quem Somos -----*/
+
+    h3{
+        font-size: 1.4rem;
+    }
+
+    .margin-quemsomos{
+        margin-top: 2.5rem;
+    }
+
+    #contactos p,#quemsomos p, #contactos a{
+        line-height: 2.25rem;
+        font-size: 1.2rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    .padding-landing{
+        padding: 4% 5%;
+    }
+
+    .carousel-caption-me{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        color: white;
+        text-align: left;
+        transform: translateY(-50%);
+    }
+
+    .padding-landing-controllers{
+        position: absolute;
+        padding: 5% 5%;
+        bottom: 0;
+    }
+
+    #produtos .padding-landing{
+        padding: 1% 5%;
+    }
+
+    /*---- Form ----*/
+
+    #contactos img{
+        width: 85px;
+        height: 85px;
+    }
+
+    #form textarea{
+        height: 150px;
+    }
+
+    #form .user-box label{
+        font-size: 15px;
+    }
+
+    #form h2{
+        font-size: 1.5rem;
+    }
+
+    #contactos h4{
+        font-size: 1.3rem;
+    }
+
+    #contactos p, #contactos a{
+        font-size: 1.1rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    /*---- Produtos ----*/
+
+    #footer img{
+        width: 200px;
+        height: auto;
+    }
+
+    .padding-produtos{
+        padding: 1% 5% 4% 5%;
+    }
+
+    .padding-footer{
+        padding: 4% 5%;
+    }
+
+
+    .todos-contentor{
+        display: grid;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6,16rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .ceramicas-contentor, .revestimentos-contentor,.sanitarios-contentor, .acessorios-contentor, .misturadoras-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,16rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+    .azulejos-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,16rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+
+    #produtos p{
+        font-size: 1.3rem;
+    }
+
+    #produtos li{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media all and (max-width: 1200px){
+    /*---- Landing Page -----*/
+    .titulo-landing{
+        font-size: 3rem;
+    }
+
+    .paragrafo-landing{
+        font-size: 1.15rem;
+    }
+
+    .landing-button-main{
+        width: fit-content;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .secondary-landing-button{
+        width: fit-content;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .carousel-control-next-icon{
+        width: 3rem!important;
+        height: 3rem!important;
+    }
+
+    /*----- Quem Somos -----*/
+
+    .margin-quemsomos{
+        margin-top: 2.5rem;
+    }
+
+    #contactos p,#quemsomos p, #contactos a{
+        line-height: 2rem;
+        font-size: 1.1rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    #quemsomos h1, #contactos h1{
+        font-size: 1.9rem;
+    }
+
+    .padding-quem-somos{
+        padding: 0 2rem;
+    }
+
+    .padding-landing{
+        padding: 4% 5%;
+    }
+
+    .carousel-caption-me{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        color: white;
+        text-align: left;
+        transform: translateY(-50%);
+    }
+
+    #produtos .padding-landing{
+        padding: 1% 10%;
+    }
+
+    /*---- Form ----*/
+
+    #contactos h4{
+        font-size: 1.2rem;
+    }
+
+    #contactos p, #contactos a{
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    #form textarea{
+        margin-bottom: 30px;
+    }
+
+    #form .user-box input{
+        margin-bottom: 25px;
+    }
+
+    #form label{
+        font-size: 10px;
+    }
+
+    #form textarea{
+        height: 100px;
+    }
+
+    #form input{
+        font-size: 13px;
+    }
+
+    #form h2{
+        font-size: 1.3rem;
+    }
+
+    .login-box{
+        padding: 50px 50px;
+    }
+
+    #contactos img{
+        width: 85px;
+        height: 85px;
+    }
+
+    /*---- Produtos -----*/
+
+    #produtos p{
+        font-size: 1.3rem;
+    }
+
+    #footer img{
+        width: 175px;
+        height: auto;
+    }
+
+
+    .todos-contentor{
+        display: grid;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6,15rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .ceramicas-contentor, .revestimentos-contentor,.sanitarios-contentor, .acessorios-contentor, .misturadoras-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,15rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+    .azulejos-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,15rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    #header_produtos h2{
+        color: white;
+        font-size: 2.5rem;
+    }
+
+}
+
+@media all and (max-width: 999px){
+    /*---- Landing Page -----*/
+
+    .margin-butoes{
+        margin-bottom: 2rem;
+    }
+
+    .padding-landing-controllers{
+        position: absolute;
+        z-index: 999;
+        left: 50%;
+        bottom: 0;
+        padding: 5% 10%;
+        transform: translateX(-50%);
+
+    }
+
+    .carousel-caption-me{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar{
+        padding: 3% 5%!important;
+    }
+
+    .fancy-link{
+        content: none;
+    }
+
+    #main hr, #produtos hr{
+        height: 1px!important;
+    }
+    .titulo-landing{
+        font-size: 3rem;
+    }
+
+    .paragrafo-landing{
+        font-size: 1.15rem;
+    }
+
+    .landing-button-main{
+        width: 45%;
+        height: 20%;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .secondary-landing-button{
+        width: 45%;
+        height: 20%;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .carousel-control-next-icon{
+        width: 3.5rem!important;
+        height: 3.5rem!important;
+    }
+
+    /*----- Quem Somos -----*/
+
+    .margin-quemsomos{
+        margin-top: 1rem;
+        padding: 0 3rem;
+    }
+
+    #contactos p,#quemsomos p, #contactos a{
+        line-height: 2.5rem;
+        font-size: 1.3rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    #quemsomos img{
+        display: none;
+    }
+
+    .position-center-quem{
+        padding-top: 1.5rem;
+    }
+
+    /*---- Form ----*/
+
+    .padding-landing{
+        padding: 0;
+    }
+
+    #produtos .padding-landing{
+        padding: 1% 5%;
+    }
+
+    .login-box{
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+
+    /*---- Contactos -----*/
+
+    .padding-contactos{
+        padding: 2rem 0;
+    }
+
+    .padding-contactos-1{
+        padding-bottom: 2rem;
+    }
+
+    #contactos img{
+        width: 80px;
+        height: 80px;
+    }
+
+    #contactos h4{
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+
+    #contactos .padding-extra-contactos{
+        padding: 0;
+    }
+
+    #contactos p, #contactos a{
+        font-size: 1.2rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    #quemsomos h3, #contactos h3{
+        font-size: 1.4rem;
+    }
+
+    #quemsomos h1, #contactos h1{
+        font-size: 2.1rem;
+    }
+
+
+    /*----- Produtos -----*/
+
+    #produtos p{
+        font-size: 1.3rem;
+    }
+
+    #footer h5{
+        font-size: 1.2rem;
+    }
+
+    .footer-link{
+        font-size: 1rem;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+
+    .footer-col{
+        padding: 0.8rem;
+    }
+
+    .padding-footer{
+        padding: 10% 5%;
+    }
+
+    #footer ul{
+        padding: 1rem;
+    }
+
+    #footer img{
+        width: 225px;
+        height: auto;
+    }
+
+
+    .todos-contentor {
+        display: grid;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,16rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .ceramicas-contentor, .revestimentos-contentor,.sanitarios-contentor, .misturadoras-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,16rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+    .azulejos-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,16rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .acessorios-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,16rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+    .padding-produtos{
+        padding: 1% 0 4% 0;
+    }
+
+
+    #header_produtos h2{
+        color: white;
+        font-size: 2rem;
+    }
+
+}
+
+@media all and (max-width: 780px){
+    /*---- Landing Page -----*/
+    .titulo-landing{
+    font-size: 2.75rem;
+}
+
+    .paragrafo-landing{
+    font-size: 1.1rem;
+}
+
+    .landing-button-main{
+        width: 50%;
+        height: 20%;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .secondary-landing-button{
+        width: 50%;
+        height: 20%;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .carousel-control-next-icon{
+    width: 3rem!important;
+    height: 3rem!important;
+}
+
+    /*----- Quem Somos -----*/
+
+    .margin-quemsomos{
+        margin-top: 1rem;
+    }
+
+    #contactos p ,#quemsomos p, #contactos a{
+        line-height: 2.5rem;
+        font-size: 1.3rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    /*---- Produtos ----*/
+
+    .todos-contentor{
+        display: grid;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,14rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .ceramicas-contentor, .revestimentos-contentor,.sanitarios-contentor, .misturadoras-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,14rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+    .azulejos-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,14rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .acessorios-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,14rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+}
+@media all and (min-width: 680px) and (min-height: 680px){
+    .vh-sm-100{
+        height: 100vh!important;
+    }
+}
+
+@media all and (max-width: 680px), (max-height: 680px){
+    .vh-sm-100{
+        height: 680px!important;
+    }
+}
+@media all and (max-width: 680px){
+    /*---- Landing Page -----*/
+
+
+    .titulo-landing{
+        font-size: 2.75rem;
+    }
+
+    .paragrafo-landing{
+        font-size: 1.1rem;
+    }
+
+    .landing-button-main{
+        width: 62%;
+        height: 30%;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .secondary-landing-button{
+        width: 62%;
+        height: 30%;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+
+    /*----- Quem Somos -----*/
+
+    .margin-quemsomos{
+        margin-top: 2rem;
+    }
+
+    #contactos p,#quemsomos p, #contactos a{
+        line-height: 2.5rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    .padding-landing{
+        padding: 4% 0;
+    }
+
+    .button-56{
+        width: 30%;
+    }
+
+    /*---- Produtos -----*/
+
+    #produtos p{
+        font-size: 1.2rem;
+    }
+
+    .todos-contentor{
+        display: grid;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7,12rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .ceramicas-contentor, .revestimentos-contentor,.sanitarios-contentor, .misturadoras-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,12rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+    .azulejos-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,12rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .acessorios-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,12rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+}
+
+@media all and (max-width: 550px){
+    /*---- Landing Page -----*/
+    .titulo-landing{
+        font-size: 2.5rem;
+    }
+
+    .paragrafo-landing{
+        font-size: 1.2rem;
+    }
+
+    .landing-button-main{
+        width: 75%;
+        height: 30%;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .secondary-landing-button{
+        width: 75%;
+        height: 30%;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+
+    /*----- Quem Somos -----*/
+
+    .todos-contentor{
+        display: grid;
+        /* Display as a Grid */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(11,12rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .ceramicas-contentor, .revestimentos-contentor,.sanitarios-contentor, .misturadoras-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,12rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+    .azulejos-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,12rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .acessorios-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,12rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+}
+
+
+
+@media all and (max-width: 480px){
+    /*---- Landing Page -----*/
+    .titulo-landing{
+        font-size: 2.25rem;
+    }
+
+    .paragrafo-landing{
+        font-size: 1rem;
+    }
+
+    .landing-button-main{
+        width: 90%;
+        height: 30%;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .secondary-landing-button{
+        width: 90%;
+        height: 30%;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+
+    /*----- Quem Somos -----*/
+
+    .button-56{
+        width: 50%;
+    }
+
+    /*---- Produtos -----*/
+
+    #footer img{
+        width: 175px;
+        height: auto;
+    }
+
+
+    .todos-contentor{
+        display: grid;
+        /* Display as a Grid */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(11,13rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .ceramicas-contentor, .revestimentos-contentor,.sanitarios-contentor, .misturadoras-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,13rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+    .azulejos-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,13rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .acessorios-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,13rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+}
+
+@media all and (max-width: 400px){
+    .todos-contentor{
+        display: grid;
+        /* Display as a Grid */
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(21,13rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .ceramicas-contentor, .revestimentos-contentor,.sanitarios-contentor, .misturadoras-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,13rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+    .azulejos-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(5,13rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+
+    .acessorios-contentor{
+        display: none;
+        /* Display as a Grid */
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,13rem);
+        /* repeat = as many times as you can fit */
+        /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+        /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+        grid-gap: 10px;
+    }
+}
+
