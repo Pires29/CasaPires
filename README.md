@@ -16,4 +16,4 @@ A static website developed for Casa Pires, designed to showcase the business's o
 - **Statistics and Analytics**: Integrated a plugin to allow the client to view detailed statistics about website traffic and user interactions.
 - **Responsive Design**: The website is fully responsive, providing an optimal viewing experience across a wide range of devices (desktops, tablets, and smartphones).
 
-The website is available at casapires.net
+The website is available at https://pires29.github.io/CasaPires/
